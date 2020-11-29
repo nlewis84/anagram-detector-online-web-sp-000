@@ -14,13 +14,9 @@ class Anagram
   def match(array)
     binding.pry
     array.each do |word|
-      if split(word) == split(@word)
-        @@anagrams << word 
-      else
-        @@anagrams
-        binding.pry
-      end
+      @@anagrams << word if split(word) == split(@word)
     end
+    @@anagrams
   end
   
   private
