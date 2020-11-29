@@ -11,8 +11,11 @@ class Anagram
   
   def match(array)
     array.each do |word|
-      @anagrams << word if split(word) == split(@word)
-      @anagrams
+      if split(word) == split(@word)
+        @anagrams << word 
+      else
+        @anagrams
+      end
     end
   end
   
