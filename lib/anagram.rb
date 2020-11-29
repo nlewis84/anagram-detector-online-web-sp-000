@@ -18,7 +18,7 @@ class Anagram
   private
   
   def split(word)
-    split_arry = word.split (//)
+    split_array = word.split (//)
     split_array.sort
   end
   
