@@ -10,6 +10,7 @@ class Anagram
   end
   
   def match(array)
+    binding.pry
     array.each do |word|
       if split(word) == split(@word)
         @anagrams << word 
