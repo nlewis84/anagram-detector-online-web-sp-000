@@ -13,6 +13,7 @@ class Anagram
     array.each do |word|
       @anagrams << word if split(word) == split(@word)
       binding.pry
+      @anagrams
     end
   end
   
