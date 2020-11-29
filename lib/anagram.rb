@@ -15,6 +15,7 @@ class Anagram
         @anagrams << word 
       else
         @anagrams
+        binding.pry
       end
     end
   end
