@@ -5,6 +5,8 @@ class Anagram
       
   @anagrams = []
   
+  binding.pry
+  
   def initialize(word)
     @word = word
   end
