@@ -3,21 +3,22 @@ require 'pry'
 class Anagram
   attr_accessor :word
       
-  @anagrams = []
+  @@anagrams = []
   
   binding.pry
   
   def initialize(word)
     @word = word
+    @@anagrams.clear
   end
   
   def match(array)
     binding.pry
     array.each do |word|
       if split(word) == split(@word)
-        @anagrams << word 
+        @@anagrams << word 
       else
-        @anagrams
+        @@anagrams
         binding.pry
       end
     end
