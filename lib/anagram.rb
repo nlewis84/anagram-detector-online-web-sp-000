@@ -3,7 +3,7 @@ require 'pry'
 class Anagram
   attr_accessor :word
       
-  @Anagrams = []
+  @@anagrams = []
   
   binding.pry
   
@@ -15,9 +15,9 @@ class Anagram
     binding.pry
     array.each do |word|
       if split(word) == split(@word)
-        @Anagrams << word 
+        @@anagrams << word 
       else
-        @Anagrams
+        @@anagrams
         binding.pry
       end
     end
